@@ -265,4 +265,52 @@ ul {
 }
 .hero__button:hover, .hero__button:focus {
   background-color: #188ce8;
+}
+
+.features {
+  padding: 60px 0px;
+}
+
+.features-list {
+  margin-bottom: 0px;
+  gap: 30px;
+}
+
+.features-list__item {
+  width: 450px;
+}
+
+.features-list__icon-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 450px;
+  height: 120px;
+  border: transparent;
+  border-radius: 4px;
+  margin-bottom: 30px;
+  background-color: #f5f4fa;
+}
+
+.features-list__icon {
+  width: 70px;
+  height: 70px;
+}
+
+.features-list__header {
+  margin-bottom: 10px;
+  color: #212121;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.features-list__description {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
 }/*# sourceMappingURL=main.css.map */
