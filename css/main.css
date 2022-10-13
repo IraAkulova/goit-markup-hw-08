@@ -1,5 +1,5 @@
 body {
-  width: 480px;
+  max-width: 480px;
   margin: 0px auto;
   color: #757575;
   background-color: #ffffff;
