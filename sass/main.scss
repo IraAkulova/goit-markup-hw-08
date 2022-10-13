@@ -1,6 +1,7 @@
 @import './utiles/vars';
 
-body {
+body { width: 480px;
+    margin: 0px auto;
     color: $primary-text-color;
     background-color: $primary-background-color;
     font-family: $primary-font;
@@ -56,4 +57,6 @@ ul {
 @import './layouts/features';
 @import './layouts/our-works';
 @import './layouts/team';
+@import './layouts/clients';
+
 
