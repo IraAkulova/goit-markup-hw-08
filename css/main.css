@@ -281,7 +281,7 @@ ul {
   display: flex;
   align-items: center;
   justify-content: center;
-  width: 450px;
+  max-width: 450px;
   height: 120px;
   border: transparent;
   border-radius: 4px;
@@ -397,6 +397,7 @@ ul {
   display: flex;
   flex-wrap: wrap;
   gap: 30px;
+  max-width: 450px;
 }
 
 .clients-list__logo {
