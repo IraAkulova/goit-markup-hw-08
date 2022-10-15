@@ -22,23 +22,24 @@ ul {
 }
 
 .container {
+    max-width: 480px;
     margin: 0 auto;
     padding: 0px 15px;
     margin: 0px auto;
 }
 
-@media screen and (min-width: 480px) {
-    body{width: 480px;
-    }
-}
+// @media screen and (min-width: 480px) {
+//     body{width: 480px;
+//     }
+// }
 
-@media screen and (min-width: 768px) {
-    body{width: 768px;}
-}
+// @media screen and (min-width: 768px) {
+//     body{width: 768px;}
+// }
 
-@media screen and (min-width: 1200px) {
-    body {width: 1200px;}
-}
+// @media screen and (min-width: 1200px) {
+//     body {width: 1200px;}
+// }
     
 
 
@@ -48,7 +49,7 @@ ul {
 @import './utiles/visually-hidden';
 @import './layouts/header';
 @import './components/logo';
-@import './layouts/menu';
+@import './layouts/header-menu';
 @import './components/social-networks';
 @import './components/section-title';
 @import './layouts/header-contacts';

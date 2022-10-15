@@ -21,26 +21,12 @@ ul {
 }
 
 .container {
+  max-width: 480px;
   margin: 0 auto;
   padding: 0px 15px;
   margin: 0px auto;
 }
 
-@media screen and (min-width: 480px) {
-  body {
-    width: 480px;
-  }
-}
-@media screen and (min-width: 768px) {
-  body {
-    width: 768px;
-  }
-}
-@media screen and (min-width: 1200px) {
-  body {
-    width: 1200px;
-  }
-}
 .visually-hidden {
   position: absolute;
   white-space: nowrap;
@@ -58,6 +44,7 @@ ul {
 .header-navigation {
   display: flex;
   justify-content: space-between;
+  align-items: center;
 }
 
 .logo-footer, .logo-header {
@@ -85,6 +72,7 @@ ul {
 }
 
 .header-nav__menu {
+  position: relative;
   padding: 10px 0px;
   width: 40px;
   height: 40px;
@@ -92,6 +80,9 @@ ul {
   background-color: transparent;
 }
 .header-nav__menu .header-nav__icon {
+  position: absolute;
+  top: 0px;
+  left: 0px;
   width: 40px;
   height: 40px;
 }
@@ -280,7 +271,7 @@ ul {
 }
 
 .features-list__item {
-  width: 450px;
+  max-width: 450px;
 }
 .features-list__item:not(:last-child) {
   margin-bottom: 30px;
