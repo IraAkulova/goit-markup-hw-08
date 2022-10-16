@@ -7,21 +7,19 @@
     text-align: center;
     letter-spacing: 0.03em;
 }
-
-// .team-list:not(:last-child) {
-//     // // display: flex;
-//     // gap: 30px;
-//     margin-bottom: 30px;
-// }
+.team-list{display: flex;
+    flex-direction: column;
+    gap: 30px;
+    width: 450px;}
+.team-list__item>img {width: 100%;
+height: auto;}
 
 .team-list__item {
     background-color: $primary-background-color;
     box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
         0px 2px 1px rgba(0, 0, 0, 0.2);
     border-radius: 0px 0px 4px 4px;
-    &:not(:last-child) {
-            margin-bottom: 30px;
-        }
+ 
 }
 
 .card-description {
@@ -48,4 +46,14 @@
 .team-social-networks {
     display: flex;
     gap: 10px;
+}
+
+@media screen and(min-width: 768px) {
+    .team-list{
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            gap: 30px;
+        }
+    
 }

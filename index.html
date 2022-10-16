@@ -15,10 +15,17 @@
   <body>
     <header class="header">
       <div class="container main-nav">
-        <nav class="header-nav">
           <div class="header-navigation"><a href="./index.html" class="logo-header"> <span>Web</span>Studio</a>
-          <button type="button" class="header-nav__menu"><svg class="header-nav__icon"><use href="./images/menu.svg#icon-menu"></use></svg></button>
+          <button type="button" class="header-nav__button js-open-menu"
+          aria-expanded="false"
+          aria-controls="mobile-menu" js-open-menu>
+            <svg width="40" height="40" aria-label="Перемикач мобільного меню">
+              <use class="header-nav__cross" href="./images/menu.svg#icon-close-menu"></use>
+              <use class="header-nav__menu" href="./images/menu.svg#icon-menu"></use>
+            </svg></button>
           </div>
+        <div class="menu" id="mobile-menu" js-menu-container>
+        <nav class="header-nav">
           <ul class="header-nav__list">
             <li class="header-nav__item">
               <a href="./index.html" class="header-nav__link current">Студія</a>
@@ -42,6 +49,7 @@
                 <use href="./images/icons.svg#icon-smartphone"></use></svg>+38 096 111 11 11</a>
           </li>
         </ul>
+        </div>
       </div>
     </header>
     <main>
@@ -498,6 +506,12 @@
         </form>
       </div>
     </div>
+    <script
+      defer
+      src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"
+      integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA=="
+      crossorigin="anonymous"></script>
+    <script src="./js/mobile-menu.js"></script>
     <script src="./js/modal.js"></script>
   </body>
 </html>

@@ -1,6 +1,6 @@
 @import './utiles/vars';
 
-body { max-width: 480px;
+body { 
     margin: 0px auto;
     color: $primary-text-color;
     background-color: $primary-background-color;
@@ -28,18 +28,20 @@ ul {
     margin: 0px auto;
 }
 
-// @media screen and (min-width: 480px) {
-//     body{width: 480px;
-//     }
-// }
+@media screen and (min-width: 480px) {
+    body{width: 480px;}
+    
+}
 
-// @media screen and (min-width: 768px) {
-//     body{width: 768px;}
-// }
+@media screen and (min-width: 768px) {
+    body{width: 768px;}
+    .container {max-width: 768px;}
+}
 
-// @media screen and (min-width: 1200px) {
-//     body {width: 1200px;}
-// }
+@media screen and (min-width: 1200px) {
+    body {width: 1600px;}
+        .container {max-width: 1200px;}
+}
     
 
 

@@ -8,8 +8,8 @@
     gap: 30px;
 }
 
+
 .features-list__item {
-    max-width: 450px;
     &:not(:last-child){margin-bottom: 30px;}
 }
 
@@ -18,7 +18,6 @@
     align-items: center;
     justify-content: center;
 
-    max-width: 450px;
     height: 120px;
     border: transparent;
     border-radius: 4px;
@@ -48,4 +47,15 @@
     font-size: 14px;
     line-height: 1.71;
     letter-spacing: 0.03em;
+}
+@media screen and(min-width: 768px) {
+    .features-list {
+        display: flex;
+        flex-wrap: wrap;
+        margin-bottom: 0px;
+        // gap: 30px;
+    }
+    .features-list__item {
+        width: 354px;
+        }
 }
