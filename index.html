@@ -14,17 +14,55 @@
   </head>
   <body>
     <header class="header">
-      <div class="container main-nav">
-          <div class="header-navigation"><a href="./index.html" class="logo-header"> <span>Web</span>Studio</a>
-          <button type="button" class="header-nav__button js-open-menu"
+      <div class="container">
+      <!-- logo -->
+        <a href="./index.html" class="logo-header"> <span>Web</span>Studio</a>
+      
+      <!-- mobile-header-button -->
+       <button type="button" class="header-nav__button js-open-menu"
           aria-expanded="false"
           aria-controls="mobile-menu" js-open-menu>
             <svg width="40" height="40" aria-label="Перемикач мобільного меню">
-              <use class="header-nav__cross" href="./images/menu.svg#icon-close-menu"></use>
               <use class="header-nav__menu" href="./images/menu.svg#icon-menu"></use>
             </svg></button>
-          </div>
-        <div class="menu" id="mobile-menu" js-menu-container>
+      <!-- mobile-menu -->
+        <div class="menu-container js-menu-container">
+          <button type="button" class="menu-toggler js-close-menu">
+            <svg width="40" height="40" aria-label="Перемикач мобільного меню">
+              <use class="header-nav__cross" href="./images/menu.svg#icon-close-menu"></use>
+            </svg>
+          </button>
+      <!-- first-block-mobile-menu -->
+          <ul class="mobile-menu">
+            <li class="mobile-menu__item">
+              <a href="./index.html" class="mobile-menu__link mobile-menu__link--active">Студія</a>
+            </li>
+            <li class="mobile-menu__item">
+              <a href="./portfolio.html" class="mobile-menu__link" rel="noopener noreferrer nofollow">Портфоліо</a>
+            </li>
+            <li class="mobile-menu__item">
+              <a href="#" class="mobile-menu__link">Контакти</a></li>
+          </ul>
+        <!-- second-block-mobile-menu -->
+        <ul class="mobile-contacts">
+          <li class="mobile-contacts__item">
+            <a href="tel:+380961111111" class="mobile-contacts__tel">+38 096 111 11 11</a>
+          </li>
+          <li class="mobile-contacts__item">
+            <a href="mailto:info@devstudio.com" class="mobile-contacts__mail">info@devstudio.com</a>
+          </li>
+        </ul>
+        <!-- third-block-mobile-menu -->
+        <ul class="mobile-social">
+          <li class="mobile-social__item"><a class="mobile-social__link" href="#" rel="noopener noreferrer nofollow" target="_blank"></a></li>
+          <li class="mobile-social__item"><a class="mobile-social__link" href="#" rel="noopener noreferrer nofollow" target="_blank"></a></li>
+          <li class="mobile-social__item"><a class="mobile-social__link" href="#" rel="noopener noreferrer nofollow" target="_blank"></a></li>
+          <li class="mobile-social__item"><a class="mobile-social__link" href="#" rel="noopener noreferrer nofollow" target="_blank"></a></li>
+        </ul>
+        </div>
+       
+            <!-- navigation -->
+        <div class="header-nav-container">
         <nav class="header-nav">
           <ul class="header-nav__list">
             <li class="header-nav__item">
@@ -50,14 +88,17 @@
           </li>
         </ul>
         </div>
+        </div>
       </div>
     </header>
     <main>
       <section class="hero">
+        <div class="container">
         <h1 class="hero__header">Ефективні рішення для вашого бізнесу</h1>
         <button type="button" class="hero__button" data-modal-open>
           Замовити послугу
         </button>
+        </div>
       </section>
       <section class="features">
         <div class="container">
@@ -375,7 +416,7 @@
     </main>
 
     <footer class="footer">
-      <div class="container footer-container">
+      <div class="container">
         <div class="footer-main">
           <a href="./index.html" class="logo-footer"> <span>Web</span>Studio</a>
           <address class="footer-main__contacts">

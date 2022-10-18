@@ -1,0 +1,40 @@
+.menu-container{
+    position: relative;
+    padding: 48px 40px;
+}
+.mobile-menu{
+    margin-bottom: 306px;
+}
+.mobile-menu__item, .mobile-contacts__item{
+    margin-bottom: 32px;
+}
+.mobile-menu__link{
+    color: $title-text-color;
+
+    font-weight: 500;
+    font-size: 40px;
+    line-height: 1.18;
+    letter-spacing: 0.02em;
+    text-decoration: none;
+    &:hover{
+        color: $accent-background-color;
+    }
+}
+.mobile-contacts__tel{
+    color: $accent-background-color;
+
+    font-weight: 500;
+    font-size: 34px;
+    line-height: 1.18;
+    letter-spacing: 0.02em;
+    text-decoration: none;
+}
+.mobile-contacts__mail{
+    color: $primary-text-color;
+    
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 1.17;
+    letter-spacing: 0.02em;
+    text-decoration: none;
+}
