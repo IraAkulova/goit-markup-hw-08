@@ -3,11 +3,25 @@
 }
 
 .features-list {
+    display: flex;
+    flex-direction: column;
     margin-bottom: 0px;
     gap: 30px;
 
+    @media screen and(min-width: 768px) {
+        flex-direction: row;
+        flex-wrap: wrap;
+        }
 }
-
+.features-list__item {
+    width: 450px;
+    @media screen and(min-width: 768px) {
+        width: 354px;
+    }
+    @media screen and(min-width: 1200px) {
+        width: 270px;
+    }
+}
 .features-list__icon-container {
     display: flex;
     align-items: center;
@@ -43,13 +57,4 @@
     line-height: 1.71;
     letter-spacing: 0.03em;
 }
-@media screen and(min-width: 768px) {
-    .features-list {
-        display: flex;
-        flex-wrap: wrap;
-        margin-bottom: 0px;
-    }
-    .features-list__item {
-        width: 354px;
-        }
-    }
+
