@@ -1,55 +1,92 @@
 .hero {
-    background-color: $hero-background-color;
+    // geometry
+    display: block;
+    justify-content: center;
     text-align: center;
+    margin: 0 auto 0 auto;
+    padding-top: 118px;
+    padding-bottom: 118px;
+    max-width: 480px;
+    max-height: 400px;
 
-    height: 400px;
-    // max-width: 480px;
-    margin-left: auto;
-    margin-right: auto;
-    background-image: url(../images/hero_mobile.jpg),
-        linear-gradient(to right,
-            rgba(47, 48, 58, 0.4),
-            rgba(47, 48, 58, 0.4));
-    background-size: auto 400px;
+    // decor
+    background-color: $hero-background-color;
     background-repeat: no-repeat;
     background-position: center;
+    background-size: cover;
 
-    @media screen and (min-width: 768px) {
-            width: 768px;
-            background-image: url(../images/hero_tablet.jpg),
-            linear-gradient(to right,
+    background-image: linear-gradient(to right,
             rgba(47, 48, 58, 0.4),
-            rgba(47, 48, 58, 0.4));
-            
+            rgba(47, 48, 58, 0.4)),
+            url(../images/hero/hero_mob_480x400_1x.jpg);
+    // retina-till-480
+    @media (min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx){
+        background-image: linear-gradient(to right,
+                    rgba(47, 48, 58, 0.4),
+                    rgba(47, 48, 58, 0.4)),
+                url(../images/hero/hero_mob_960x800_2x.jpg);
+    }
+    // breakpoint(481px)
+    @media screen and (min-width: 481px) {
+            // geometry
+            max-width: 768px;
+            // decor
+            background-image: linear-gradient(to right,
+            rgba(47, 48, 58, 0.4),
+            rgba(47, 48, 58, 0.4)),
+            url(../images/hero/hero_tab_768x400_1x.jpg);
+        // retina-till-768
+        @media (min-device-pixel-ratio: 2),
+            (min-resolution: 192dpi),
+            (min-resolution: 2dppx) {
+                background-image: linear-gradient(to right,
+                        rgba(47, 48, 58, 0.4),
+                        rgba(47, 48, 58, 0.4)),
+                    url(../images/hero/hero_tab_1536x800_2x.jpg);
+            }
         }
-    @media screen and (min-width: 1200px) {
-            width: 1600px;
-            height: 600px;
-            background-image: url(../images/hero.jpg),
-            linear-gradient(to right,
-            rgba(47, 48, 58, 0.4),
-            rgba(47, 48, 58, 0.4));
-            background-size: 1600px auto;
+        // breakpoint(769px)
+    @media screen and (min-width: 769px) {
+            // geometry
+            max-width: 1199px;
             
+            // decor
+            background-image: linear-gradient(to right,
+            rgba(47, 48, 58, 0.4),
+            rgba(47, 48, 58, 0.4)),
+            url(../images/hero/hero_desk_1600x600_1x.jpg);
+            // retina-till-1200
+        @media (min-device-pixel-ratio: 2),
+            (min-resolution: 192dpi),
+            (min-resolution: 2dppx) {
+                background-image: linear-gradient(to right,
+                        rgba(47, 48, 58, 0.4),
+                        rgba(47, 48, 58, 0.4)),
+                    url(../images/hero/hero_desk_3200x1200_2x.jpg);
+            }
+        @media screen and (min-width: 1200px){
+            // geometry
+            padding-top: 200px;
+            padding-bottom: 200px;
+            max-height: 600px;
+            max-width: 1600px;
+            }
         }
 }
 
 .hero__header {
-    margin: 0px auto;
-    padding: 118px 0px 30px 0px;
-    width: 360px;
+    margin-bottom: 30px;
 
     color: $primary-background-color;
     font-weight: 900;
     font-size: 26px;
     line-height: 1.62;
-    text-align: center;
     letter-spacing: 0.06em;
     text-transform: uppercase;
 
     @media screen and (min-width: 1200px) {
-    padding: 200px 0px 30px 0px;
-    width: 696px;
     font-size: 44px;
     line-height: 1.36;
     }
@@ -64,11 +101,9 @@
     background-color: $accent-background-color;
     border: none;
     border-radius: 4px;
-    font-family: inherit;
     font-weight: 700;
     font-size: 16px;
     line-height: 1.88;
-    align-items: center;
     text-align: center;
     letter-spacing: 0.06em;
     cursor: pointer;
@@ -78,8 +113,5 @@
     &:hover,
     &:focus {
         background-color: #188ce8;
-    }
-    @media screen and (min-width: 1200px) {
-    margin-bottom: 200px;
     }
 }
