@@ -4,22 +4,36 @@
     background-color: $hero-background-color;
 }
 
-// .footer-container {
-//     display: flex;
-//     align-items: baseline;
-// }
+.footer-container {
+    display: flex;
+    justify-content: center;
+    align-items: baseline;
+    flex-wrap: wrap;
+    gap: 60px;
+
+    @media screen and (min-width: 768px){
+        justify-content: space-around;
+    }
+    @media screen and (min-width: 1200px) {
+        gap: 70px;
+    }
+}
 
 .footer-main{display: flex;
     flex-direction: column;
     align-items: center;
     width: 232px;
-    margin: 0px auto;
+    @media screen and (min-width: 1200px) {
+            align-items: flex-start;
+        }
 }
 .footer-contacts{
     display: flex;
-        flex-direction: column;
-        align-items: center;
-        margin-bottom: 60px;
+    flex-direction: column;
+    align-items: center;
+    @media screen and (min-width: 1200px) {
+            align-items: flex-start;
+        }
 }
 .footer-contacts__item {
     margin-bottom: 9px;
@@ -64,8 +78,6 @@
 }
 
 .footer-social {
-    margin-bottom: 60px;
-
     font-family: $primary-font;
     font-style: normal;
     font-weight: 700;
@@ -89,13 +101,18 @@
 
 .footer-subscribe {
     position: relative;
-    // margin-left: 93px;
+    justify-content: center;
+    align-items: center;
     display: flex;
     flex-direction: column;
-
+    flex-grow: 2;
+    @media screen and (min-width: 1200px) {
+        align-items: flex-start;
+        margin-left: 11px;
+    }
+}
 .footer-subscribe__slogan {
     padding-bottom: 20px;
-    margin: 0px auto;
     width: 207px;
 
     font-weight: 700;
@@ -104,16 +121,22 @@
     letter-spacing: 0.03em;
     text-transform: uppercase;
     color: $primary-background-color;
+
 }
 
 .footer-subscribe__form {
     display: flex;
     flex-direction: column;
     align-items: center;
+    width: 100%;
+
+    @media screen and (min-width: 1200px) {
+        flex-direction: row;
+    }
 }
 
 .subscribe__field {
-    width: 450px;
+    width: 100%;
     height: 50px;
     padding: 15px 16px;
     margin-bottom: 20px;
@@ -121,6 +144,14 @@
     filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
     border-radius: 4px;
     background-color: $hero-background-color;
+
+    @media screen and (min-width: 768px) {
+       width: 450px; 
+    }
+    @media screen and (min-width: 1200px) {
+        width: 358px;
+        margin-bottom: 0px;
+    }
 }
 
 .subscribe__button {
@@ -147,6 +178,9 @@
     &:focus {
         background-color: #188ce8;
     }
+        @media screen and (min-width: 1200px) {
+            margin-left: 12px;
+        }
 }
 
 .footer-subscribe-icon {
@@ -161,4 +195,3 @@
     background-position: center;
 }
 
-}
