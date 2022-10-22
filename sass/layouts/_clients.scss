@@ -5,6 +5,7 @@
 .clients-list {
     display: flex;
     flex-wrap: wrap;
+    justify-content: center;
     gap: 30px;
     // max-width: 450px;
 }
@@ -28,7 +29,12 @@
         color: $accent-background-color;
         border: solid 1px $accent-background-color;
     }
-  
+  @media screen and (min-width: 768px) {
+    width: 226px;
+  }
+  @media screen and (min-width: 1200px) {
+      width: 170px;
+  }
 }
 
 .clients-list__icon {
