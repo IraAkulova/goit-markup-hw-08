@@ -9,6 +9,9 @@
     background-color: $additional-background-color;
     background-position: center;
     background-size: cover;
+    @media screen and (min-width: 1200px) {
+            padding: 94px 0px;
+        }
 }
 .team-list{
     display: flex;

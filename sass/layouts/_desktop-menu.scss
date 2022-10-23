@@ -57,6 +57,11 @@
 }
 .contacts{
     margin: 21px auto;
+    @media screen and (min-width: 768px) {
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+        }
     @media screen and (min-width: 1200px) {
             display: flex;
             gap: 30px;
