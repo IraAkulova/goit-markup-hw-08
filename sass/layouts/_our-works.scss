@@ -2,6 +2,9 @@
     display: none;
     padding-top: 0px;
     padding-bottom: 94px;
+    @media screen and (min-width: 1200px) {
+        display: flex;
+    }
 }
 
 .works-list {
