@@ -741,6 +741,7 @@ body {
 }
 .subscribe__field:focus {
   outline: #2196f3;
+  border: 1px solid #2196f3;
 }
 @media screen and (min-width: 768px) {
   .subscribe__field {
