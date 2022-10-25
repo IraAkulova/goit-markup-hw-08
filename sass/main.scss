@@ -18,6 +18,12 @@
 @import './layouts/modal';
 @import './layouts/backdrop';
 
+// layouts-portfolio
+@import './layouts/portfolio/portfolio-container';
+@import './layouts/portfolio/buttons-list';
+@import './layouts/portfolio/portfolio';
+
+
 
 // components
 @import './components/logo';

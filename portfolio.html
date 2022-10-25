@@ -15,9 +15,58 @@
 
   <body>
     <header class="header">
-      <div class="container main-nav">
+      <div class="container header-container">
+      <!-- logo -->
+        <a href="./index.html" class="logo-header"> <span>Web</span>Studio</a>
+      
+      <!-- mobile-header-button -->
+       <button type="button" class="header-nav__button js-open-menu"
+          aria-expanded="false"
+          aria-controls="mobile-menu" js-open-menu>
+            <svg width="40" height="40" aria-label="Перемикач мобільного меню">
+              <use class="header-nav__menu" href="./images/menu.svg#icon-menu"></use>
+            </svg></button>
+      <!-- mobile-menu -->
+        <div class="menu-container js-menu-container">
+          <button type="button" class="menu-toggler js-close-menu">
+            <svg width="40" height="40" aria-label="Перемикач мобільного меню">
+              <use class="header-nav__cross" href="./images/menu.svg#icon-close-menu"></use>
+            </svg>
+          </button>
+      <!-- first-block-mobile-menu -->
+          <ul class="mobile-menu">
+            <li class="mobile-menu__item">
+              <a href="./index.html" class="mobile-menu__link">Студія</a>
+            </li>
+            <li class="mobile-menu__item">
+              <a href="./portfolio.html" class="mobile-menu__link mobile-menu__link--active" rel="noopener noreferrer nofollow">Портфоліо</a>
+            </li>
+            <li class="mobile-menu__item">
+              <a href="#" class="mobile-menu__link">Контакти</a></li>
+          </ul>
+        <!-- second-block-mobile-menu -->
+        <div class="menu-contacts">
+        <ul class="mobile-contacts">
+          <li class="mobile-contacts__item">
+            <a href="tel:+380961111111" class="mobile-contacts__tel">+38 096 111 11 11</a>
+          </li>
+          <li class="mobile-contacts__item">
+            <a href="mailto:info@devstudio.com" class="mobile-contacts__mail">info@devstudio.com</a>
+          </li>
+        </ul>
+        <!-- third-block-mobile-menu -->
+        <ul class="mobile-social">
+          <li class="mobile-social__item"><a class="mobile-social__link" href="#" rel="noopener noreferrer nofollow" target="_blank">Instagram</a></li>
+          <li class="mobile-social__item"><a class="mobile-social__link" href="#" rel="noopener noreferrer nofollow" target="_blank">Twitter</a></li>
+          <li class="mobile-social__item"><a class="mobile-social__link" href="#" rel="noopener noreferrer nofollow" target="_blank">Facebook</a></li>
+          <li class="mobile-social__item"><a class="mobile-social__link" href="#" rel="noopener noreferrer nofollow" target="_blank">LinkedIn</a></li>
+        </ul>
+        </div>
+        </div>
+       
+            <!-- navigation -->
+        <div class="header-nav-container">
         <nav class="header-nav">
-          <a href="./index.html" class="logo-header"> <span>Web</span>Studio</a>
           <ul class="header-nav__list">
             <li class="header-nav__item">
               <a href="./index.html" class="header-nav__link">Студія</a>
@@ -41,11 +90,13 @@
                 <use href="./images/icons.svg#icon-smartphone"></use></svg>+38 096 111 11 11</a>
           </li>
         </ul>
+        </div>
+        </div>
       </div>
     </header>
   <main>
       <section class="projects section">
-        <div class="container">
+        <div class="container portfolio-container">
           <h1 class="visually-hidden">Каталог робіт</h1>
           <ul class="filters">
             <li>
@@ -68,11 +119,32 @@
             <li class="project">
               <a class="project__link" href="#">
                 <div class="project__overlay">
+                  <picture>
+                    <source
+                  srcset="
+                    ./images/portfolio/1/technohryk_mob_450x294_1x.jpg 1x,
+                    ./images/portfolio/1/technohryk_mob_900x588_2x.jpg 2x"
+                  type="image/jpeg"
+                  media="(max-width: 767px)"
+                />
+                <source
+                  srcset="
+                    ./images/portfolio/1/technohryk_tab_354x294_1x.jpg 1x,
+                    ./images/portfolio/1/technohryk_tab_708x588_2x.jpg 2x"
+                  type="image/jpeg"
+                  media="(min-width: 768px)"
+                />
+                <source
+                  srcset="
+                    ./images/portfolio/1/technohryk_desk_370x294_1x.jpg 1x,
+                    ./images/portfolio/1/technohryk_desk_740x588_2x.jpg 2x"
+                  type="image/jpeg"
+                  media="(min-width: 1200px)"
+                />
                   <img class="project__pic"
-                    src="./images/pf1.jpg"
-                    alt="Фото розробників на екрані ноутбука"
-                    width="370"
-                    height="294"/>
+                    src="./images/portfolio/1/technohryk_mob_450x294_1x.jpg"
+                    alt="Фото розробників на екрані ноутбука"/>
+                  </picture>
                   <p class="project__description">
                     Ресурс пропонує комплексні пропозиції з різним рівнем
                     функціоналу та сервісів. Все це дозволить відвідувачу
@@ -87,11 +159,32 @@
             <li class="project">
               <a class="project__link" href="#">
                 <div class="project__overlay">
+                  <picture>
+                <source
+                  srcset="
+                    ./images/portfolio/2/new-orlean_mob_450x294_1x.jpg 1x,
+                    ./images/portfolio/2/new-orlean_mob_900x588_2x.jpg 2x"
+                  type="image/jpeg"
+                  media="(max-width: 767px)"
+                />
+                <source
+                  srcset="
+                    ./images/portfolio/2/new-orlean_tab_354x294_1x.jpg 1x,
+                    ./images/portfolio/2/new-orlean_tab_708x588_2x.jpg 2x"
+                  type="image/jpeg"
+                  media="(min-width: 768px)"
+                />
+                <source
+                  srcset="
+                    ./images/portfolio/2/new-orlean_desk_370x294_1x.jpg 1x,
+                    ./images/portfolio/2/new-orlean_desk_740x588_2x.jpg 2x"
+                  type="image/jpeg"
+                  media="(min-width: 1200px)"
+                /> 
                   <img class="project__pic"
-                    src="./images/pf2.jpg"
-                    alt="Двоє гравців грають баскетбол"
-                    width="370"
-                    height="294"/>
+                    src="./images/portfolio/2/new-orlean_mob_450x294_1x.jpg"
+                    alt="Двоє гравців грають баскетбол"/>
+                  </picture>
                   <p class="project__description">
                     Ресурс пропонує комплексні пропозиції з різним рівнем
                     функціоналу та сервісів. Все цедозволить відвідувачу
@@ -108,11 +201,32 @@
             <li class="project">
               <a class="project__link" href="">
                 <div class="project__overlay">
+                  <picture>
+                <source
+                  srcset="
+                    ./images/portfolio/3/seafood_mob_450x294_1x.jpg 1x,
+                    ./images/portfolio/3/seafood_mob_900x588_2x.jpg 2x"
+                  type="image/jpeg"
+                  media="(max-width: 767px)"
+                />
+                <source
+                  srcset="
+                    ./images/portfolio/3/seafood_tab_354x294_1x.jpg 1x,
+                    ./images/portfolio/3/seafood_tab_708x588_2x.jpg 2x"
+                  type="image/jpeg"
+                  media="(min-width: 768px)"
+                />
+                <source
+                  srcset="
+                    ./images/portfolio/3/seafood_desk_370x294_1x.jpg 1x,
+                    ./images/portfolio/3/seafood_desk_740x588_2x.jpg 2x"
+                  type="image/jpeg"
+                  media="(min-width: 1200px)"
+                /> 
                   <img class="project__pic"
-                    src="./images/pf3.jpg"
-                    alt="Емблема ресторану"
-                    width="370"
-                    height="294"/>
+                    src="./images/portfolio/3/seafood_mob_450x294_1x.jpg"
+                    alt="Емблема ресторану"/>
+                    </picture>
                   <p class="project__description">
                     Ресурс пропонує комплексні пропозиції з різним рівнем
                     функціоналу та сервісів. Все цедозволить відвідувачу
@@ -127,11 +241,32 @@
             <li class="project">
               <a class="project__link" href="#">
                 <div class="project__overlay">
+                  <picture>
+                <source
+                  srcset="
+                    ./images/portfolio/4/prime_mob_450x294_1x.jpg 1x,
+                    ./images/portfolio/4/prime_mob_900x588_2x.jpg 2x"
+                  type="image/jpeg"
+                  media="(max-width: 767px)"
+                />
+                <source
+                  srcset="
+                    ./images/portfolio/4/prime_tab_354x294_1x.jpg 1x,
+                    ./images/portfolio/4/prime_tab_708x588_2x.jpg 2x"
+                  type="image/jpeg"
+                  media="(min-width: 768px)"
+                />
+                <source
+                  srcset="
+                    ./images/portfolio/4/prime_desk_370x294_1x.jpg 1x,
+                    ./images/portfolio/4/prime_desk_740x588_2x.jpg 2x"
+                  type="image/jpeg"
+                  media="(min-width: 1200px)"
+                />  
                   <img class="project__pic"
-                    src="./images/pf4.jpg"
-                    alt="Закриті чорні навушники"
-                    width="370"
-                    height="294"/>
+                    src="./images/portfolio/4/prime_mob_450x294_1x.jpg"
+                    alt="Закриті чорні навушники"/>
+                  </picture>
                   <p class="project__description">
                     Ресурс пропонує комплексні пропозиції з різним рівнем
                     функціоналу та сервісів. Все цедозволить відвідувачу
@@ -146,11 +281,32 @@
             <li class="project">
               <a class="project__link" href="#">
                 <div class="project__overlay">
+                  <picture>
+                <source
+                  srcset="
+                    ./images/portfolio/5/boxes_mob_450x294_1x.jpg 1x,
+                    ./images/portfolio/5/boxes_mob_900x588_2x.jpg 2x"
+                  type="image/jpeg"
+                  media="(max-width: 767px)"
+                />
+                <source
+                  srcset="
+                    ./images/portfolio/5/boxes_tab_354x294_1x.jpg 1x,
+                    ./images/portfolio/5/boxes_tab_708x588_2x.jpg 2x"
+                  type="image/jpeg"
+                  media="(min-width: 768px)"
+                />
+                <source
+                  srcset="
+                    ./images/portfolio/5/boxes_desk_370x294_1x.jpg 1x,
+                    ./images/portfolio/5/boxes_desk_740x588_2x.jpg 2x"
+                  type="image/jpeg"
+                  media="(min-width: 1200px)"
+                />   
                   <img class="project__pic"
-                    src="./images/pf5.jpg"
-                    alt="Дві коробки різного розміру"
-                    width="370"
-                    height="294"/>
+                    src="./images/portfolio/5/boxes_mob_450x294_1x.jpg"
+                    alt="Дві коробки різного розміру"/>
+                  </picture>
                   <p class="project__description">
                     Ресурс пропонує комплексні пропозиції з різним рівнем
                     функціоналу та сервісів. Все цедозволить відвідувачу
@@ -165,11 +321,32 @@
             <li class="project">
               <a class="project__link" href="#">
                 <div class="project__overlay">
+                  <picture>
+                <source
+                  srcset="
+                    ./images/portfolio/6/inspiration_mob_450x294_1x.jpg 1x,
+                    ./images/portfolio/6/inspiration_mob_900x588_2x.jpg 2x"
+                  type="image/jpeg"
+                  media="(max-width: 767px)"
+                />
+                <source
+                  srcset="
+                    ./images/portfolio/6/inspiration_tab_354x294_1x.jpg 1x,
+                    ./images/portfolio/6/inspiration_tab_708x588_2x.jpg 2x"
+                  type="image/jpeg"
+                  media="(min-width: 768px)"
+                />
+                <source
+                  srcset="
+                    ./images/portfolio/6/inspiration_desk_370x294_1x.jpg 1x,
+                    ./images/portfolio/6/inspiration_desk_740x588_2x.jpg 2x"
+                  type="image/jpeg"
+                  media="(min-width: 1200px)"
+                /> 
                   <img class="project__pic"
-                    src="./images/pf6.jpg"
-                    alt="Екран комп'ютера з гаслом і картою світу"
-                    width="370"
-                    height="294"/>
+                    src="./images/portfolio/6/inspiration_mob_450x294_1x.jpg"
+                    alt="Екран комп'ютера з гаслом і картою світу"/>
+                  </picture>
                   <p class="project__description">
                     Ресурс пропонує комплексні пропозиції з різним рівнем
                     функціоналу та сервісів. Все цедозволить відвідувачу
@@ -184,11 +361,32 @@
             <li class="project">
               <a class="project__link" href="#">
                 <div class="project__overlay">
+                  <picture>
+                <source
+                  srcset="
+                    ./images/portfolio/7/limited_mob_450x294_1x.jpg 1x,
+                    ./images/portfolio/7/limited_mob_900x588_2x.jpg 2x"
+                  type="image/jpeg"
+                  media="(max-width: 767px)"
+                />
+                <source
+                  srcset="
+                    ./images/portfolio/7/limited_tab_354x294_1x.jpg 1x,
+                    ./images/portfolio/7/limited_tab_708x588_2x.jpg 2x"
+                  type="image/jpeg"
+                  media="(min-width: 768px)"
+                />
+                <source
+                  srcset="
+                    ./images/portfolio/7/limited_desk_370x294_1x.jpg 1x,
+                    ./images/portfolio/7/limited_desk_740x588_2x.jpg 2x"
+                  type="image/jpeg"
+                  media="(min-width: 1200px)"
+                />  
                   <img class="project__pic"
-                    src="./images/pf7.jpg"
-                    alt="Розгорнута книга"
-                    width="370"
-                    height="294"/>
+                    src="./images/portfolio/7/limited_mob_450x294_1x.jpg"
+                    alt="Розгорнута книга"/>
+                  </picture>
                   <p class="project__description">
                     Ресурс пропонує комплексні пропозиції з різним рівнем
                     функціоналу та сервісів. Все цедозволить відвідувачу
@@ -203,11 +401,32 @@
             <li class="project">
               <a class="project__link" href="#">
                 <div class="project__overlay">
+                  <picture>
+                <source
+                  srcset="
+                    ./images/portfolio/8/lab_mob_450x294_1x.jpg 1x,
+                    ./images/portfolio/8/lab_mob_900x588_2x.jpg 2x"
+                  type="image/jpeg"
+                  media="(max-width: 767px)"
+                />
+                <source
+                  srcset="
+                    ./images/portfolio/8/lab_tab_354x294_1x.jpg 1x,
+                    ./images/portfolio/8/lab_tab_708x588_2x.jpg 2x"
+                  type="image/jpeg"
+                  media="(min-width: 768px)"
+                />
+                <source
+                  srcset="
+                    ./images/portfolio/8/lab_desk_370x294_1x.jpg 1x,
+                    ./images/portfolio/8/lab_desk_740x588_2x.jpg 2x"
+                  type="image/jpeg"
+                  media="(min-width: 1200px)"
+                />    
                   <img class="project__pic"
-                    src="./images/pf8.jpg"
-                    alt="Бірка на шнурку з назвою проекту"
-                    width="370"
-                    height="294"/>
+                    src="./images/portfolio/8/lab_mob_450x294_1x.jpg"
+                    alt="Бірка на шнурку з назвою проекту"/>
+                  </picture>
                   <p class="project__description">
                     Ресурс пропонує комплексні пропозиції з різним рівнем
                     функціоналу та сервісів. Все цедозволить відвідувачу
@@ -222,11 +441,32 @@
             <li class="project">
               <a class="project__link" href="#">
                 <div class="project__overlay">
+                  <picture>
+                   <source
+                  srcset="
+                    ./images/portfolio/9/growing_mob_450x294_1x.jpg 1x,
+                    ./images/portfolio/9/growing_mob_900x588_2x.jpg 2x"
+                  type="image/jpeg"
+                  media="(max-width: 767px)"
+                />
+                <source
+                  srcset="
+                    ./images/portfolio/9/growing_tab_354x294_1x.jpg 1x,
+                    ./images/portfolio/9/growing_tab_708x588_2x.jpg 2x"
+                  type="image/jpeg"
+                  media="(min-width: 768px)"
+                />
+                <source
+                  srcset="
+                    ./images/portfolio/9/growing_desk_370x294_1x.jpg 1x,
+                    ./images/portfolio/9/growing_desk_740x588_2x.jpg 2x"
+                  type="image/jpeg"
+                  media="(min-width: 1200px)"
+                />     
                   <img class="project__pic"
-                    src="./images/pf9.jpg"
-                    alt="Розробник друкує на клавіатурі ноутбука"
-                    width="370"
-                    height="294"/>
+                    src="./images/portfolio/9/growing_mob_450x294_1x.jpg"
+                    alt="Розробник друкує на клавіатурі ноутбука"/>
+                  </picture>
                   <p class="project__description">
                     Ресурс пропонує комплексні пропозиції з різним рівнем
                     функціоналу та сервісів. Все цедозволить відвідувачу
@@ -319,5 +559,6 @@
         </form>
       </div>
     </footer>
+  <script src="./js/mobile-menu.js"></script>  
   </body>
 </html>
